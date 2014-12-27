@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+@if (Request.IsAuthenticated)
+{
+    <h3>
+        User is authenticated
+    </h3>
+}
+else
+{
+    <h3>
+        User is not authenticated
+    </h3>
+}
+

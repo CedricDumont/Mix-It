@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixIt.Public.WebApi", "MixI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixIt.Web.UI", "MixIt.Web.UI\MixIt.Web.UI.csproj", "{492516AF-4AD9-44B5-9294-4F9412C4BAF5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc.ResourceExplorer", "Mvc.ResourceExplorer\Mvc.ResourceExplorer.csproj", "{67E56601-0852-43EE-8EF0-01214F5ECDEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{492516AF-4AD9-44B5-9294-4F9412C4BAF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{492516AF-4AD9-44B5-9294-4F9412C4BAF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{492516AF-4AD9-44B5-9294-4F9412C4BAF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67E56601-0852-43EE-8EF0-01214F5ECDEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67E56601-0852-43EE-8EF0-01214F5ECDEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67E56601-0852-43EE-8EF0-01214F5ECDEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67E56601-0852-43EE-8EF0-01214F5ECDEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
