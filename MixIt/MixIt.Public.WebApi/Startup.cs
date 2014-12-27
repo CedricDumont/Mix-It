@@ -26,6 +26,8 @@ namespace   MixIt.Public.WebApi
             var config = new HttpConfiguration();
             config.MapHttpAttributeRoutes();
 
+            config.EnableCors();
+
             app.UseWebApi(config);
         }
     }

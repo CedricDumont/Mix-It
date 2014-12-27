@@ -1,0 +1,19 @@
+﻿<div data-ng-controller="resources as vm">
+        <div class="ui form fluid">
+            <div class="field">
+                <div class="ui input">
+                    <input type="text" placeholder="enter resource id" data-ng-model="vm.resourceId">
+                </div>
+            </div>
+           
+            <div class="ui hidden divider"></div>
+            <div class="ui red submit button" data-ng-click="vm.getResource(vm.resourceId)">load resource </div>
+            <div class="ui hidden divider"></div>
+                      
+        </div>
+    resource : <br/>
+    {{vm.resource}}
+
+    
+
+</div>

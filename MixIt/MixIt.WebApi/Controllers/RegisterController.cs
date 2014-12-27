@@ -13,6 +13,7 @@ using System.Web.Http.Cors;
 
 namespace MixIt.WebApi.Controllers
 {
+    [EnableCors(origins: "http://localhost:5101", headers: "*", methods: "*")]
     public class RegisterController : ApiController
     {
         UserAccountService<CustomUserAccount> userAccountService;

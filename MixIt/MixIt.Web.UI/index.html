@@ -1,0 +1,33 @@
+﻿
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <!--jquery required for bootstrap-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--semantic css-->
+    <link href="content/semantic.css" rel="stylesheet" />
+    <script src="scripts/semantic.js"></script>
+
+    <!-- angular files and services -->
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/angular-local-storage.js"></script>
+
+    <!-- application -->
+
+    <script src="app/services/common/common.js"></script>
+    <script src="app/services/common/logger.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/config.js"></script>
+    <script src="app/config.route.js"></script>
+    <script src="app/services/authService.js"></script>
+    <script src="app/account/account.js"></script>
+    <script src="app/directives/iValidateAntiForgeryToken.js"></script>
+    <script src="app/resources/resources.js"></script>
+    <title></title>
+</head>
+<body data-ng-app="identityApp">
+    <div data-ng-view />
+</body>
+
+</html>

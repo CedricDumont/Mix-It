@@ -1,0 +1,53 @@
+﻿<div data-ng-controller="account as vm">
+    <div class="ui top attached medium header">
+        <i class="settings icon"></i>
+        <div class="content">
+            Create a new Account
+            <div class="sub header">Enter All the required information.</div>
+        </div>
+    </div>
+    <div class="ui attached segment">
+        <div class="ui form fluid">
+            <div class="field">
+                <div class="ui left icon input">
+                    <input type="text" placeholder="Enter your a UserName" data-ng-model="vm.credentials.userName">
+                    <i class="user icon"></i>
+                </div>
+            </div>
+           
+                <div class="field">
+                    <div class="ui left icon input">
+                        <input type="password" placeholder="Enter a password" data-ng-model="vm.credentials.password">
+                        <i class="lock icon"></i>
+                    </div>
+                </div>
+                <div class="field" data-ng-show="vm.createNew">
+                    <div class="ui left icon input">
+                        <input type="password" placeholder="confirmPassword" data-ng-model="vm.credentials.confirmPpassword">
+                        <i class="lock icon"></i>
+                    </div>
+                </div>
+            <div class="field" data-ng-show="vm.createNew">
+                <div class="ui left icon input">
+                    <input type="text" placeholder="Enter your email" data-ng-model="vm.credentials.email">
+                    <i class="mail icon"></i>
+                </div>
+            </div>
+            <div class="ui hidden divider"></div>
+            <div class="ui red submit button" data-ng-show="!vm.authenticated && !vm.createNew" data-ng-click="vm.createNew = true">Create account </div>
+            <div class="ui red submit button" data-ng-show="!vm.authenticated && vm.createNew" data-ng-click="vm.register(vm.credentials)"> Sign In </div>
+            <div class="ui red submit button" data-ng-show="!vm.authenticated && !vm.createNew" data-ng-click="vm.login(vm.credentials)"> Log In </div>
+            <div class="ui red submit button" data-ng-click="vm.logout()"> Log out </div>
+
+        </div>
+
+    </div>
+    {{ vm.authenticated}}
+    <div data-ng-show="vm.authenticated ">
+        You are authenticated
+    </div>
+
+    <div data-ng-show="!vm.authenticated ">
+        You are Not authenticated
+    </div>
+</div>

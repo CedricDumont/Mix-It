@@ -9,7 +9,7 @@ namespace MixIt.WebApi
     {
         public static void Register(HttpConfiguration config)
         {
-           // config.EnableCors();
+            config.EnableCors();
 
             // Web API routes
             config.MapHttpAttributeRoutes();
